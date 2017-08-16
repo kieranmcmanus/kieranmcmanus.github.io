@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+/* ==========================================================================
+   Base styles:
+   ========================================================================== */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+/* Color:
+
+Ground Control to Major Tom
+
+Dark grey: #2B2E2E
+Grey: #595855
+Light grey: #A2ABA5
+Light bue: #CAE6E8
+Navy: #313F54
+
+Rise
+
+Navy: #2B3A42
+Blue: #3F5765
+Light blue: #BDD4DE
+White: #EFEFEF
+Orange: #E74C3C
+
+*/
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  background-color: #EFEFEF;
+  color: #2B3A42;
+  letter-spacing: .02em;
+}
+
+a {
+  text-decoration: none;
+  color: #EFEFEF;
+}
+
+p {
+  padding-top: 30px;
+}
+
+h1{
+  font-size: 48px;
+  letter-spacing: 0.5em;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h1 a {
+  color: #313F54;
+}
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+nav {
+  background-color: #2B2E2E;
+}
+nav ul {
+  list-style:none;
+  background-color: #2B2E2E;
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+  color: #EFEFEF;
+  display: inline-block;
+  border-bottom: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+	padding: 10px 60px;
+}
+
+nav a:hover {
+  background-color: #EFEFEF;
+  color: #2B2E2E;
+  transition: .3s all ease-in-out;
+  padding: 10px 60px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 20px;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+header {
+  padding-top: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/bicycles.jpg');
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+.bandcamp {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #FFFFFF;
+}
+
+.album {
+
+}
+
+.releases {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about {
+  margin-left: 350px;
+  margin-right: 350px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.venues {
+  margin-left: 350px;
+  margin-right: 350px;
+  padding-bottom: 50px;
+}
+
+.venues ul {
+  list-style:none;
+  text-align: center;
+  padding: 0px;
+}
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+
+.icons {
+  font-size: 30px;
+  padding: 30px 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  color: #44545E;
+}
+
+.icons a:hover {
+  color: #313F54;
+  transition: .3s all ease-in-out;
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+
+footer {
+  background-color: #2B2E2E;
+  color: #EFEFEF;
+  overflow: auto;
+}
