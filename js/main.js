@@ -4,6 +4,42 @@
   //Image fades in
 //When the user scrolls down
   //Info text fades in
+var path = location.pathname;
+
+console.log(location.pathname);
+
+if(path = "about.html") {
+  $('img').fadeIn(2000);
+  console.log('Image faded in!');
+
+  $(window).on('scroll', function () {
+    var distanceScrolled = $(window).scrollTop();
+    console.log('The distance scrolled is: ' + distanceScrolled);
+
+    if (distanceScrolled > 200) {
+      $('p').fadeIn(1000);
+      $('.venues').fadeIn(1000);
+    }
+  });
+}
+$('.soloReleases').addClass('selected');
+
+$('.soloReleases').on('click', function() {
+  $('.solo').fadeIn(0);
+  $('.shattuck').fadeOut(0);
+  $('.soloReleases').addClass('selected');
+  $('.shattuckReleases').removeClass('selected');
+  console.log('Solo releases!');
+});
+
+$('.shattuckReleases').on('click', function() {
+  $('.solo').fadeOut(0);
+  $('.shattuck').fadeIn(0);
+  $('.shattuckReleases').addClass('selected');
+  $('.soloReleases').removeClass('selected');
+  console.log('Shattuck releases!');
+});
+
 
 //On the 'Releases' page
 //When the user clicks on 'Solo'
