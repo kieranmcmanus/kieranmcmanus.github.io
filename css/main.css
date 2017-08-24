@@ -32,7 +32,15 @@ img {
 /* ----------------------------------------
 Base Styles
 ------------------------------------------- */
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
+.Site-content {
+  flex: 1;
+}
 
 /* ----------------------------------------
 Typography
@@ -85,6 +93,11 @@ h2 li {
   letter-spacing: 0.2em;
 	margin: 10px 60px;
 }
+
+.album a, .venues a, h3 a {
+  color: #2B3A42;
+}
+
 
 
 
@@ -162,6 +175,12 @@ Layout
     padding-right: 75px;
 }
 
+.album img {
+  width: 350px;
+}
+
+
+
 .releases {
   display: flex;
   justify-content: center;
@@ -189,6 +208,12 @@ Layout
 
 .about img {
   display: none;
+  max-width: 600px;
+  max-height: 600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #2B2E2E;
 }
 
 .about p {
@@ -208,6 +233,13 @@ Layout
   padding: 0px;
 }
 
+.contact {
+  margin-left: 350px;
+  margin-right: 350px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
@@ -223,6 +255,38 @@ Buttons
 .icons a:hover {
   color: #313F54;
   transition: .3s all ease-in-out;
+}
+
+#mailingList {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button, button {
+  color: #EFEFEF;
+  background-color: #2B2E2E;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.button:hover, button:hover {
+  background-color: #BDD4DE;
+  color: #2B2E2E;
+  transition: .3s all ease-in-out;
+}
+
+/* ----------------------------------------
+Forms
+------------------------------------------- */
+form {
+
+}
+
+input, label {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 /* ----------------------------------------
@@ -244,5 +308,8 @@ Media Queries
   }
   nav ul {
     display: none;
+  }
+  .venues, .about, .contact {
+    margin: 0 auto;
   }
 }
