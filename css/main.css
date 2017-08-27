@@ -356,6 +356,12 @@ footer {
 /* ----------------------------------------
 Media Queries
 ------------------------------------------- */
+@media screen and (max-width: 1550px) {
+  .about, .venues {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 870px) {
   .hamburger {
     display: block;
@@ -363,7 +369,7 @@ Media Queries
   nav ul {
     display: none;
   }
-  .venues, .about, .contact {
+  .venues, .about, .contact, .about p {
     margin: 0 auto;
   }
   .releases {
