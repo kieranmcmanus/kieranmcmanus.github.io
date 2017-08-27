@@ -1,5 +1,17 @@
 // Make it rain!
 
+$('.hamburger').on('click', function() {
+  $('.nav2 ul').fadeIn();
+  $('.nav2 a').fadeIn();
+  $('.hamburger').hide();
+})
+
+$('.close').on('click', function() {
+  $('.nav2 ul').hide();
+  $('.nav2 a').fadeIn();
+  $('.hamburger').fadeIn();
+})
+
 //When the user opens the 'About' page
   //Image fades in
 //When the user scrolls down
@@ -11,7 +23,7 @@ console.log(location.pathname);
 if(path = "about.html") {
   $('#first').fadeIn(2000);
   $('p').fadeIn(2000);
-  $('.venues').fadeIn(2000);
+  $('.venues ul').fadeIn(2000);
   //
   // $(window).on('scroll', function () {
   //   var distanceScrolled = $(window).scrollTop();
