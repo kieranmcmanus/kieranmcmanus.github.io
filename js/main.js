@@ -10,6 +10,7 @@ $('.close').on('click', function() {
   $('.nav2 ul').hide();
   $('.nav2 a').fadeIn();
   $('.hamburger').fadeIn();
+  $('.close').hide();
 })
 
 //When the user opens the 'About' page
