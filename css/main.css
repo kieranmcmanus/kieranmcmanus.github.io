@@ -39,6 +39,7 @@ Base Styles
 }
 
 .Site-content {
+  padding-top: 30px;
   flex: 1;
 }
 
@@ -111,6 +112,11 @@ Header
 ------------------------------------------- */
 nav, .nav2 nav {
   background-color: #2B2E2E;
+  position: fixed;
+	top: 0;
+  left: 0;
+	right: 0;
+  z-index: 100;
 }
 nav ul {
   list-style:none;
