@@ -44,7 +44,7 @@ Base Styles
 }
 
 #about-bg {
-  background-color: #313F54;
+  /*background-color: #313F54;*/
 }
 
 /*#index-header {
@@ -241,6 +241,10 @@ Layout
   justify-content: center;
 }
 
+.releases img:hover {
+  opacity: .75;
+}
+
 .solo {
 
 }
@@ -255,8 +259,11 @@ Layout
 
 
 .selected {
-  border-bottom: 2px solid black;
-  border-spacing: 5px;
+  color: #EFEFEF;
+  background-color: #2B2E2E;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .about {
@@ -268,8 +275,9 @@ Layout
 
 .about img {
   display: none;
-  max-width: 800px;
-  max-height: 600px;
+  /*max-width: 800px;
+  max-height: 600px;*/
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -281,7 +289,51 @@ Layout
   margin-left: 200px;
   margin-right: 200px;
 }
-
+.carousel-wrapper {
+  position: relative;
+}
+#previous {
+  position:absolute;
+  top:50%;
+  left:0%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(-0%,-50%)
+  border:none;
+  display:inline-block;
+  outline:0;
+  padding:16px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+  color:#fff!important;
+  background-color:#000!important;
+}
+#next {
+  position:absolute;
+  top:50%;
+  right:0%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(0%,-50%);
+  border:none;
+  display:inline-block;
+  outline:0;
+  padding:16px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+  color:#fff!important;
+  background-color:#000!important;
+}
 .venues {
   margin-left: 350px;
   margin-right: 350px;
@@ -317,7 +369,7 @@ Buttons
 }
 
 .icons a:hover {
-  color: #313F54;
+  color: #BDD4DE;
   transition: .3s all ease-in-out;
 }
 
@@ -326,7 +378,7 @@ Buttons
   margin-bottom: 10px;
 }
 
-.button, button {
+.button, button, #form-submit {
   color: #EFEFEF;
   background-color: #2B2E2E;
   border: none;
@@ -334,7 +386,7 @@ Buttons
   margin-bottom: 15px;
 }
 
-.button:hover, button:hover {
+.button:hover, button:hover, #form-submit:hover {
   background-color: #BDD4DE;
   color: #EFEFEF;
   transition: .3s all ease-in-out;
@@ -343,9 +395,6 @@ Buttons
 /* ----------------------------------------
 Forms
 ------------------------------------------- */
-form {
-
-}
 
 input, label {
   display: block;
