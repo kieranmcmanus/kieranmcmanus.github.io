@@ -1,17 +1,7 @@
-// Make it rain!
-
-$('.hamburger').on('click', function() {
-  $('.nav2 ul').fadeIn();
-  $('.nav2 a').fadeIn();
-  $('.hamburger').hide();
-})
-
-$('.close').on('click', function() {
-  $('.nav2 ul').hide();
-  $('.nav2 a').fadeIn();
-  $('.hamburger').fadeIn();
-  $('.close').hide();
-})
+$('#hamburger').on('click', function() {
+    $('.nav2 ul').toggle();
+    $('.nav2').toggleClass('block');
+});
 
 //When the user opens the 'About' page
   //Image fades in

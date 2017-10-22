@@ -146,14 +146,13 @@ nav a, .nav2 nav a {
 	padding: 10px 60px;
 }
 
-nav a:hover {
+nav a:hover, .nav2 nav a:hover {
   background-color: #EFEFEF;
   color: #2B2E2E;
   transition: .3s all ease-in-out;
-  padding: 10px 60px;
 }
 
-.hamburger {
+#hamburger {
   display: none;
   font-size: 20px;
   color: #EFEFEF;
@@ -161,43 +160,23 @@ nav a:hover {
   text-align: center;
 }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  text-transform: none;
-  font-size: 20px;
+.nav2 nav a, .nav2 nav a:hover {
   display: block;
 }
 
-.close a {
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.75px;
-  color: #EFEFEF;
-  display: block;
-  border-bottom: none;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-	padding: 0px;
-}
-
-
-.nav2 a {
-  display: none;
-}
-
-.nav2 ul{
+.nav2 ul {
   list-style:none;
   display: none;
   background-color: #2B2E2E;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-  padding-top: 50px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .nav2 li {
+  display: block;
+}
+
+.block {
   display: block;
 }
 
@@ -422,10 +401,10 @@ Media Queries
 }
 
 @media screen and (max-width: 870px) {
-  .hamburger {
+  #hamburger {
     display: block;
   }
-  nav ul {
+  .main_nav {
     display: none;
   }
   .venues, .about, .contact, .about p {
