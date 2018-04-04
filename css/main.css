@@ -204,7 +204,7 @@ Layout
   background-color: #FFFFFF;
 }
 
-.shattuck .album {
+.album {
     padding-left: 75px;
     padding-right: 75px;
 }
@@ -260,6 +260,7 @@ Layout
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 4px;
+  /*max-height: 75%;*/
   /*border: 1px solid #2B2E2E;*/
 }
 
@@ -396,19 +397,24 @@ Media Queries
 ------------------------------------------- */
 @media screen and (max-width: 1550px) {
   .about, .venues {
-    margin: 0 auto;
+    margin: 0px 250px;
+  }
+  .about p {
+    margin: 50px;
   }
 }
 
+@media screen and (max-width: 1250px) {
+  .venues, .about, .contact, .about p {
+    margin: 0 50px;
+  }
+}
 @media screen and (max-width: 870px) {
   #hamburger {
     display: block;
   }
   .main_nav {
     display: none;
-  }
-  .venues, .about, .contact, .about p {
-    margin: 0 auto;
   }
   .releases {
     display: block;
